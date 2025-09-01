@@ -1,0 +1,41 @@
+-- return {
+--   "epwalsh/obsidian.nvim",
+--   lazy = true,
+--   event = {
+--     -- If you want to use the home shortcut '~' here you need to call 'vim.fn.expand'.
+--     -- E.g. "BufReadPre " .. vim.fn.expand "~" .. "/my-vault/**.md"
+--     "BufReadPre " .. vim.fn.expand "~" .. "/Documents/obsidian/learning/**.md",
+--     "BufNewFile " .. vim.fn.expand "~" .. "/Documents/obsidian/learning/**.md",
+--     "BufReadPre " .. vim.fn.expand "~" .. "/Documents/obsidian/work/**.md",
+--     "BufNewFile " .. vim.fn.expand "~" .. "/Documents/obsidian/work/**.md",
+--   },
+--   dependencies = {
+--     -- Required.
+--     "nvim-lua/plenary.nvim",
+-- 
+--     -- see below for full list of optional dependencies 👇
+--   },
+--   opts = {
+--     workspaces = {
+--       {
+--         name = "learning",
+--         path = "~/Documents/obsidian/learning",
+--       },
+--       {
+--         name = "work",
+--         path = "~/Documents/obsidian/work",
+--       },
+--     },
+-- 
+--     -- Optional, key mappings.
+--     mappings = {
+--     },
+--     open_notes_in = "hsplit",
+--   },
+--   keys = {
+--     {"n", "<leader>of", "<cmd>ObsidianFollowLink<cr>", { desc = 'Go to link under cursol'}},
+--     {"n", "<leader>oqw", "<cmd>ObsidianQuickSwitch<cr>", { desc = 'To quickly switch to another notes in your vault, searching by its name'}},
+--     {"n", "<leader>obl", "<cmd>ObsidianBacklinks<cr>", { desc = 'For getting a location list of references to the current buffer'}},
+--     {"n", "<leader>on", "<cmd>ObsidianToday<cr>", { desc = 'To create a new daily note.'}}
+--   }
+-- }
